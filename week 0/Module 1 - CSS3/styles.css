@@ -1,0 +1,111 @@
+/* 
+   custom styles for the local event portal
+   written by deepa nair for training assignment
+*/
+
+/* resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+/* header & navigation */
+nav {
+    background-color: #1e293b;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* main structures */
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #1e293b;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #334155;
+}
+
+/* highlight class */
+.highlight {
+    color: #ec4899;
+    font-weight: 600;
+}
+
+/* list styling */
+ul.event-features {
+    list-style-type: square;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* clean table layout */
+.events-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.events-table th, .events-table td {
+    padding: 12px;
+    border-bottom: 1px solid #334155;
+    text-align: left;
+}
+
+.events-table th {
+    background-color: #334155;
+    color: #6366f1;
+}
+
+.events-table tr:hover {
+    background-color: #1e293b;
+}
+
+/* simple animations */
+button {
+    background-color: #6366f1;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #4f46e5;
+}
+
+/* responsive queries */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px auto;
+    }
+    .events-table th, .events-table td {
+        padding: 8px;
+    }
+}
